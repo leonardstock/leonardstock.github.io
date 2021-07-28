@@ -1,8 +1,15 @@
 /* html {
     background: black;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .notification {
@@ -21,8 +28,8 @@ body {
 }
 
 .navBar {
-  padding: 1em;
-  margin-top: 1em;
+  padding: 2em 1em 0 1em;
+  background: #f0eeeb;
 }
 
 .navBar .container {
@@ -33,20 +40,66 @@ body {
 }
 
 .navBar a {
-  text-decoration: none;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .hero {
   position: relative;
-  margin-top: .5em;
-  padding: .8em;
+  padding: 2em .8em 2em .8em;
+  background: #f0eeeb;
+}
+
+.hero .heroMessage {
+  margin-top: -.5em;
+  color: #5a5444;
 }
 
 .hero img {
   width: 100%;
   margin-bottom: .5em;
   height: 80%;
+}
+
+.hero ul {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+.hero ul li {
+  margin-left: -.5em;
+  margin-bottom: .5em;
+  position: relative;
+  color: #5a5444;
+}
+
+.hero ul li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/Checkmark.svg);
+  background-size: contain;
+  margin-right: 2em;
+}
+
+.hero input[type="text"] {
+  background-color: white;
+  font-family: "Roboto";
+  border: none;
+  border-radius: .3em;
+  padding: 1.35em;
+  width: 40%;
+  margin-right: 1em;
+}
+
+.hero input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: .3em;
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */
