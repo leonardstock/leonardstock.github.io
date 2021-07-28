@@ -1,0 +1,54 @@
+/* html {
+    background: black;
+} */
+
+body{
+    margin: 0;
+}
+
+.notification {
+    background: black;
+    padding: .8em;
+    text-align: center;
+
+    p {
+        color: white;
+        content: center;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+}
+
+.navBar {
+    padding: 1em;
+    margin-top: 1em;
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
+
+.hero {
+    position: relative;
+    margin-top: .5em;
+    padding: .8em;
+
+    .container {
+        
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: .5em; 
+        height: 80%;     
+    }
+}
