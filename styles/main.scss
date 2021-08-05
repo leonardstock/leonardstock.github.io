@@ -102,3 +102,62 @@ a {
         padding: 1em;
     }
 }
+
+.feature {
+
+    .featureCompanies {
+        display: flex;
+        place-content: space-between;
+
+        img {
+            width: 25%;
+            margin: 2.5em 1em 2em 1em;
+        }
+    }
+
+    .featureBox {
+        background: rgb(240, 238, 235);
+        margin: 1em;
+        padding: 1em 2em 1em 2em;
+        border-radius: .4em;
+
+        p {
+            color: rgb(90, 84, 68);
+        }
+
+        a {
+            color: rgb(90, 84, 68);
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            position: relative;
+            bottom: -1.2em;
+        }
+    }
+}
+
+.details {
+    .container {
+        padding: 2em;
+    }
+
+    p {
+        color: rgb(90, 84, 68);
+    }
+
+    a {
+        color: rgb(90, 84, 68);
+        text-decoration: underline;
+    }
+
+    img {
+        margin-top: 2em;
+        width: 100%;
+    }
+}
+
+.footer {
+    background: black;
+}

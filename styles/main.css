@@ -102,4 +102,60 @@ a {
   border-radius: .3em;
   padding: 1em;
 }
+
+.feature .featureCompanies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.feature .featureCompanies img {
+  width: 25%;
+  margin: 2.5em 1em 2em 1em;
+}
+
+.feature .featureBox {
+  background: #f0eeeb;
+  margin: 1em;
+  padding: 1em 2em 1em 2em;
+  border-radius: .4em;
+}
+
+.feature .featureBox p {
+  color: #5a5444;
+}
+
+.feature .featureBox a {
+  color: #5a5444;
+  text-decoration: underline;
+}
+
+.feature .featureBox img {
+  width: 100%;
+  position: relative;
+  bottom: -1.2em;
+}
+
+.details .container {
+  padding: 2em;
+}
+
+.details p {
+  color: #5a5444;
+}
+
+.details a {
+  color: #5a5444;
+  text-decoration: underline;
+}
+
+.details img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.footer {
+  background: black;
+}
 /*# sourceMappingURL=main.css.map */
