@@ -452,4 +452,16 @@ a {
     grid-row: 1;
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  .hero .leftColumn {
+    margin-top: 15em;
+  }
+  .feature .container .featureBox .wrapper .text {
+    margin-top: 15em;
+  }
+  .details .wrapper .text {
+    margin-top: 8em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
