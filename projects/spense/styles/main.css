@@ -295,6 +295,9 @@ a {
   .navBar nav ul .getStartedButton a {
     color: white;
   }
+  .navBar nav ul .getStartedButton:hover {
+    cursor: pointer;
+  }
   .navBar ul.primaryNav {
     margin-right: -3em;
   }
