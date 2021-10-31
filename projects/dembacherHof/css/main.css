@@ -141,7 +141,7 @@ nav li #language-select {
   background: #06240b;
 }
 
-#content .container {
+#content .container, #content .container-ab {
   padding: 1em;
 }
 
@@ -251,6 +251,10 @@ iframe {
     height: auto;
     width: 100%;
     padding: 0;
+    /* TODO you stopped here at altes brennhaus, removed unsere ferienwohnungen in navbar */
+  }
+  .navbar nav li a {
+    font-size: 1em;
   }
   ul {
     display: -webkit-box;
@@ -260,6 +264,10 @@ iframe {
   a {
     font-size: 1em;
     padding: .1em 1em;
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
   }
   .content h2 a {
     padding-left: .2em;
