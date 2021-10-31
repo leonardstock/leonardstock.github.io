@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Kontakt - Dembacher Hof, Ferienwohnungen in Rheinhessen, Rheinland-Pfalz</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Dembacher Hof</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li><a href="index.html">Unsere Ferienwohnungen</a></li>
+                    <li><a href="alter_pferdestall.html">"Alter Pferdestall"</a></li>
+                    <li><a href="altes_brennhaus.html">"Altes Brennhaus"</a></li>
+                    <li><a href="nieder_wiesen.html">Nieder-Wiesen</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li>
+                        <select name="language" id="language-select">
+                            <option value="deutsch">Deutsch</option>
+                            <option value="englisch">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <img class="slideShow" src="/images/header/dembacher_hof.jpg" alt="Frontansicht beider Eingänge">
+            <img class="slideShow" src="/images/header/alter_pferdestall.jpg" alt="Frontansicht beider Eingänge">
+            <img class="slideShow" src="/images/header/alter_pferdestall_eingang.jpg"
+                alt="Frontansicht beider Eingänge">
+            <img class="slideShow" src="/images/header/altes_brennhaus.jpg" alt="Frontansicht beider Eingänge">
+            <img class="slideShow" src="/images/header/kontakt.jpg" alt="Frontansicht beider Eingänge">
+
+            <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="next" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id='content' name='content' class="content">
+        <div class="container">
+            <div class="contact-left">
+                <h1>Kontakt</h1>
+                <p>Dembacher Hof<br>
+                    Christina und Fritz Stock<br>
+                    Schlossgasse 14<br>
+                    55234 Nieder-Wiesen<br>
+                </p>
+                <table class="contact">
+                    <tr>
+                        <th>Telefon:</th>
+                        <td>06736-245</td>
+                    </tr>
+                    <tr>
+                        <th>Fax:</th>
+                        <td>06736-960 245</td>
+                    </tr>
+                    <tr>
+                        <th>E-Mail:</th>
+                        <td>kontakt[at]dembacherhof.de</td>
+                    </tr>
+                </table>
+
+
+                <h1>Nachricht senden</h1>
+
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="message">Mitteilung:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Abschicken">
+                </form>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.029630032225!2d7.979854099999999!3d49.729067699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47961fcc97517c3b%3A0x17e8141f464358d3!2sDembacher%20Hof!5e0!3m2!1sde!2suk!4v1622040544234!5m2!1sde!2suk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </section>
+</body>
+<script src="javascript/main.js"></script>
+
+</html>
