@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto";
+}
+
+.header button {
+  float: right;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40vh;
+}
+
+.container .title {
+  font-family: "Roboto";
+}
+
+.container .subtitle {
+  font-size: 3rem;
+  font-family: "Nunito";
+}
+
+.tableOfContents {
+  margin-top: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .tableOfContents {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .tableOfContents .rest {
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
+  }
+  .tableOfContents .initial:hover .rest {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .subtitle {
+    margin-left: 0.5rem;
+  }
+  .tableOfContents {
+    margin-top: -6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
+  .tableOfContents a {
+    margin: 0 1rem 2rem 0;
+  }
+  .tableOfContents .rest {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
