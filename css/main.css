@@ -19,6 +19,10 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* .logoSubpage {
+      width: 3rem;
+      height: 3rem;
+  } */
 }
 .header .container img {
   width: 3rem;
@@ -37,12 +41,8 @@ ul {
 }
 .header .container .logo {
   margin-left: auto;
-  width: 3rem;
-  height: 3rem;
-}
-.header .container .logoSubpage {
-  width: 3rem;
-  height: 3rem;
+  /* width: 3rem;
+  height: 3rem; */
 }
 
 .hero {
