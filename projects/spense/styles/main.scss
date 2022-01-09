@@ -159,6 +159,7 @@ a {
     .container {
         padding: 1em;
         color: rgb(90, 84, 68);
+        overflow: hidden;
     }
 
     h1 {
@@ -172,7 +173,7 @@ a {
 
     img {
         margin-top: 2em;
-        width: 100%;
+        width: 107%;
     }
 }
 
@@ -427,7 +428,7 @@ a {
 
     .details {
         .container {
-            padding: 2em 5em;
+            padding: 2em 5em 2em 4em;
         }
 
         .wrapper {
