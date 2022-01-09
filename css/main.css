@@ -20,6 +20,10 @@ ul {
   flex-direction: row;
   justify-content: space-between;
 }
+.header .container img {
+  width: 3rem;
+  height: 3rem;
+}
 .header .container .navback {
   position: relative;
   height: 3rem;
