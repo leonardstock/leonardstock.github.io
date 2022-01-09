@@ -27,6 +27,7 @@ ul {
         img {
             width: 3rem;
             height: 3rem;
+            border-radius: 0 0 0 .5rem;
         }
 
         .navback {
@@ -44,19 +45,17 @@ ul {
 
         .logo {
             margin-left: auto;
-            /* width: 3rem;
-            height: 3rem; */
         }
-        /* .logoSubpage {
-            width: 3rem;
-            height: 3rem;
-        } */
+
+        .navbackIcon {
+            border-radius: 0 0 .5rem 0;
+        }
     }
 }
 
 .hero{
-    /* transform: translateY(120%);
- */
+    transform: translateY(30vh);
+
     .container {
         display: flex;
         justify-content: center;
@@ -71,7 +70,7 @@ ul {
         ul { 
             padding: 0 .5rem;
             li {
-
+                padding: .5rem;
                 margin-bottom: .5rem;
                 background-color: #171a1b;
                 color: $standard-light-colour;
@@ -84,13 +83,38 @@ ul {
                 color: $standard-light-colour;
             }
         }
+
+        
     }
 }
+
+.heroAbout {
+    transform: translateY(15vh);
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        margin-bottom: 2rem;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 5rem;
+    }
+
+    p {
+        padding: 0 1rem;
+    }
+}
+
     
 .tableOfContentsMain {
+    transform: translateY(77vh);
 
     .wrapper {
-        margin-top: 35vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;

@@ -19,14 +19,11 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* .logoSubpage {
-      width: 3rem;
-      height: 3rem;
-  } */
 }
 .header .container img {
   width: 3rem;
   height: 3rem;
+  border-radius: 0 0 0 0.5rem;
 }
 .header .container .navback {
   position: relative;
@@ -41,13 +38,13 @@ ul {
 }
 .header .container .logo {
   margin-left: auto;
-  /* width: 3rem;
-  height: 3rem; */
+}
+.header .container .navbackIcon {
+  border-radius: 0 0 0.5rem 0;
 }
 
 .hero {
-  /* transform: translateY(120%);
-  */
+  transform: translateY(30vh);
 }
 .hero .container {
   display: flex;
@@ -63,6 +60,7 @@ ul {
   padding: 0 0.5rem;
 }
 .hero .container ul li {
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   background-color: #171a1b;
   color: #e7e6e3;
@@ -74,8 +72,29 @@ ul {
   color: #e7e6e3;
 }
 
+.heroAbout {
+  transform: translateY(15vh);
+}
+.heroAbout .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heroAbout img {
+  margin-bottom: 2rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+}
+.heroAbout p {
+  padding: 0 1rem;
+}
+
+.tableOfContentsMain {
+  transform: translateY(77vh);
+}
 .tableOfContentsMain .wrapper {
-  margin-top: 35vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
