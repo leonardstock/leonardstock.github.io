@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
 $standard-dark-colour: #171a1b;
+$standard-medium-colour: #333;
 $standard-light-colour: #e7e6e3;
 
 body {
     margin: 0;
     font-family: "Roboto";
     background-color: var(--standard-light-colour);
+}
+
+.wrapper {
     height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -18,7 +25,52 @@ ul {
     list-style: none;
 }
 
-.header {
+header {
+    top: 0;
+    width: 100%;
+    height: 6%;
+    background-color: $standard-medium-colour;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+
+    a {
+        color: $standard-light-colour;
+        font-family: "Nunito";
+        font-size: 1.2rem;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 94vh;
+
+    .title {
+        color: $standard-dark-colour;
+    }
+    .subtitle {
+        font-size: 3rem;
+        font-family: "Nunito";
+    }
+}
+
+/* header {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .subtitle {
+        font-size: 3rem;
+        font-family: "Nunito";
+    }
+} */
+
+/* header {
     .container {
         display: flex;
         flex-direction: row;
@@ -51,10 +103,11 @@ ul {
             border-radius: 0 0 .5rem 0;
         }
     }
-}
+} */
 
-.hero{
+/* .hero{
     transform: translateY(30vh);
+    height: 100%;
 
     .container {
         display: flex;
@@ -86,9 +139,9 @@ ul {
 
         
     }
-}
+} */
 
-.heroAbout {
+/* .heroAbout {
     transform: translateY(15vh);
 
     .container {
@@ -108,29 +161,109 @@ ul {
     p {
         padding: 0 1rem;
     }
-}
+} */
 
     
-.tableOfContentsMain {
-    transform: translateY(77vh);
+/* .tableOfContentsMain {
+    background: #333;
+    height: 100vh; 
+    
+    a {
+        padding-top: 2rem;
+        color: $standard-light-colour;
+    }
 
     .wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
         align-content: flex-end;
+    }
+} */
+
+.about {
+    background: $standard-medium-colour;
+    color: $standard-light-colour;
+    height: 100%;
+
+    .title {
+        padding: 2rem 2rem 0;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .content {
+        padding: 2rem 2rem 0;
+        font-family: "Nunito";
     }
 }
 
-/* .tableOfContents {
-    margin-top: 50vh;
+.projects {
+    background: $standard-light-colour;
+    height: 100vh;
+
+    .title {
+        font-size: 5rem;
+        margin-bottom: 10rem;
+        padding: 2rem 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        align-items: space-between;
+        justify-content: space-between;
+        padding: 0 2rem;
+        .tile {
+            height: 30rem;
+            width: 20rem;
+            background-color: $standard-medium-colour;
+            border-radius: 2rem;
+
+        }
+    }
+}
+
+.contact {
+    background: $standard-medium-colour;
+    color: $standard-light-colour;
+    height: 100%;
+
+    .title {
+        padding: 2rem 2rem 0;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .content {
+        font-family: "Nunito";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+}
+
+.nav-up {
+    position: fixed;
+    background-color: $standard-dark-colour;
+    color: $standard-light-colour;
+    font-weight: bold;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    align-content: flex-end;
-} */
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 10px 10px teal;
+}
+
 
 /* @media only screen and (min-width: 768px) {
     .tableOfContents {
