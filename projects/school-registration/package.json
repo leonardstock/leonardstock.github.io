@@ -1,0 +1,17 @@
+{
+  "name": "school-registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jquery": "^3.6.0",
+    "mongodb": "^4.3.1"
+  }
+}
